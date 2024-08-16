@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"
+      ;
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"
+      ;
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"
+      ;
+    ></script>
+    <title>Sign Up|Decorify</title>
+  </head>
+  <body id="signupbody">
+    <div class="maincontainer">
+      <div class="maincontainer1">
+        <div class="imagecontainer"></div>
+        <div class="contentcontainer">
+          <h3>sign up for Decorify</h3>
+          <div class="signupform">
+            <input id="name" placeholder="name" type="text" />
+            <input id="email" placeholder="email address" type="text" />
+            <input
+              id="passward"
+              style="margin-bottom: 20px"
+              placeholder="passward"
+              type="password"
+            />
+            <button
+              onclick="emailVerification()"
+              class="signupbutton"
+              type="submit"
+            >
+              sign up to get started
+            </button>
+          </div>
+          <p>alredy have an account ? <a href="login.html">sign in</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>

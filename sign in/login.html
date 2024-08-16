@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"
+      ;
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"
+      ;
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"
+      ;
+    ></script>
+    <title>Decorify|Log In</title>
+  </head>
+  <body id="loginbody">
+    <div class="maincontainer2">
+      <div class="minicontainer">
+        <p id="login">welcome back!</p>
+        <div class="loginform">
+          <input id="useremail" placeholder="email" type="text" />
+          <input id="userpassward" placeholder="passward" type="password" />
+          <a style="cursor: pointer;" onclick="forgotPassward()">forgot your passward?</a>
+          <button onclick="logIn()" class="loginbutton">log in</button>
+        </div>
+        <p id="social">log in with</p>
+        <div class="socialbox">
+          <img
+            onclick="logInWithGoogle()"
+            width="35px"
+            height="35px"
+            src="image/google logo.png"
+            alt="google"
+          />
+          <img
+            onclick="logInWithGithub()"
+            width="50px"
+            height="50px"
+            src="image/github logo.png"
+            alt="github"
+          />
+        </div>
+        <p id="link">don't have an acount?<a href="signup.html">sign up</a></p>
+      </div>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>

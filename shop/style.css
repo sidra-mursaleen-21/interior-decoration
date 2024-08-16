@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* styling section no 1 ( header ) */
+
+#topbutton {
+  padding-left: 10px;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 4%;
+  z-index: 1;
+  background-color: gray;
+  display: none;
+}
+
+#navbar {
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.logo p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.list li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.list li::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.list li:hover::after {
+  transform: scaleX(1);
+}
+
+.buttonbox{
+  display: flex;
+  justify-content: space-evenly;
+  height: 35px;
+  width: 260px;
+}
+
+.signup{
+  border: 2px solid #263256;
+  text-transform: capitalize;
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.signup:hover{
+  color: white;
+  border: none;
+  background-color: #263256;
+}
+
+.login{
+  background-color: #263256;
+  text-transform: capitalize;
+  width: 120px;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.login:hover{
+  border: 2px solid #263256;
+  background-color: transparent;
+  color: black;
+}
+
+.maincontainer1 {
+  height: 600px;
+  background-image: url(images/image2.avif);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer1 h1 {
+  padding: 15px 0px;
+  width: 60%;
+  text-align: center;
+  border: 2px solid white;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.products {
+  padding: 10px 0px 0px 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products li {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.products li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.products li:hover::after {
+  transform: scaleX(1);
+}
+
+/* styling section no 2 ( products ) */
+
+#cartcontainer {
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin-bottom: 20px;
+  height: 400px;
+  width: 350px;
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+
+.minibox {
+  padding: 0px 20px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.minibox h4 {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.minibox i {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* styling cart product */
+
+#cartheading {
+  padding-left: 50px;
+  text-align: start;
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#productcontainer {
+  padding: 0px 50px;
+}
+
+.productbox {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-left: none; 
+  border-right: none;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgrey;
+}
+
+.productbox p {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 250px;
+}
+
+.productbox h5 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productimage {
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 120px;
+  height: 80%;
+}
+
+.deleteproducts {
+  width: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.deleteproducts img {
+  cursor: pointer;
+}
+
+#subtotal {
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 50px;
+  width: 90%;
+  height: 100px;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: end;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-right: 100px;
+}
+
+/* styling section no 3 ( footer ) */
+
+.maincontainer7 {
+  overflow: hidden;
+  height: 100%;
+  background-image: url(images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.overlay {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.minibox1 {
+  color: white;
+}
+
+.minibox1 p {
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.minibox1 h5 {
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.minibox2 {
+  padding: 30px 20px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.minibox2 h3 {
+  text-align: start;
+  margin: auto;
+  width: 200px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.quicklinks {
+  margin: auto;
+  width: 150px;
+  text-align: start;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+.quicklinks li {
+  margin: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.quicklinks li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 80%;
+  left: 0;
+  background-color: white;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.quicklinks li:hover::after {
+  transform: scaleX(1);
+}
+
+.quicklinks li a {
+  text-decoration: none;
+  color: white;
+}
+
+.serviceslink {
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.serviceslink li {
+  margin: auto;
+  width: 250px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.minibox3 {
+  color: white;
+  padding: 40px 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.signuplink {
+  background-color:#1c2233 ;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 30px;
+  transition: 0.2s;
+}
+
+.signuplink:hover {
+  border-radius: 0px;
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 20px;
+  transform: 0.2s;
+}
+
+.icon:hover {
+  font-size: 35px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1153px) {
+  .box {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 1010px) {
+  #cartcontainer {
+    padding: 20px 10px !important;
+  }
+  .box {
+    width: 360px !important;
+  }
+  .maincontainer1 h1 {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+#productcontainer{
+  padding: 0px 10px !important;
+}
+.productimage{
+  width: 250px !important;
+}
+}
+@media screen and (max-width: 423px) {
+  .productbox{
+    flex-wrap: wrap !important;
+    height: 100% !important;
+    justify-content: center !important;
+  }
+  .productimage{
+    width: 170px !important;
+    height: 150px !important;
+  }
+  .productbox p {
+    width: 400px !important;
+    font-size: 20px !important;
+    padding-top: 10px !important;
+    justify-content: center !important;
+  }
+  .productbox h5{
+    height: 50px !important;
+  }
+  .deleteproducts{
+    height: 50px !important;
+  }
+
+}
